@@ -16,4 +16,17 @@ class pelajar
 
     public: pelajar(){nilai = 100;}
     friend void manusia::showNilauPelajar(pelajar &x);
+};
+
+void manusia::showNilauPelajar(pelajar &x)
+{
+    cout << x.nilai;
+}
+
+int main()
+{
+    manusia budi;
+    pelajar pbudi;
+    budi.showNilauPelajar(pbudi);
+    return 0;
 }
